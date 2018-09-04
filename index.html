@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- meta tags for search engines -->
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-
-    <!-- social links -->
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta name="author" content="Tim Thuis 2018" />
 
     <!-- tab info browser -->
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <title></title>
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon" />
+    <title>Rai Innovatie Event</title>
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./style.min.css">
   </head>
   <body>
-    <h1>RAI</h1>
+    <div class="main">
+      <div class="intro-screen">
+        <h1>Rai Innovatie Event</h1>
+        <p>Find your collegues and crack the code</p>
+        <div class="code-input">
+          <input type="number" oninput="checkInputFieldValue(this.value)" name="inputField" value="" placeholder="************">
+          <p class="input-field-assist"></p>
+        </div>
+      </div>
+
+      <div class="media">
+        <video  controls width="100%" preload src="./media/videoRaiSample.mp4"></video>
+      </div>
+    </div>
   </body>
   <script src="./main.js"></script>
 </html>
