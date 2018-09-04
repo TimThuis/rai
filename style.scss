@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  max-width: 600px;
+  background: black;
   hr {
     margin: 0;
     height: 3px;
@@ -10,18 +12,23 @@ body {
 .main {
   background: #D72346;
   height: 100vh;
-  width: calc(100vw - 64px);
+  max-width: 700px;
   color: white;
   padding: 0 32px;
   position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
   h1 {
     padding: 64px 0 0 0;
     margin: 0;
     text-transform: uppercase;
-    font-size: 1.7em;
+    font-size: 1.6em;
   }
   p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .line {
     margin-top: 4px;
@@ -33,7 +40,7 @@ body {
     text-decoration: underline;
   }
   .content-center {
-    margin-top: 128px;
+    margin-top: 64px;
   }
 }
 
@@ -60,7 +67,7 @@ body {
 
 #media {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
