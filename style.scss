@@ -65,12 +65,11 @@ body {
   top: 0;
   left: 0;
   background: rgba(0,0,0,0.75);
-  padding: 0 32px;
   display: flex;
   align-items: center;
   opacity: 0;
   display: none;
   video {
-    width: calc(100% - 64px);
+    width: 100%;
   }
 }

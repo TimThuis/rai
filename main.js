@@ -1,7 +1,7 @@
 var valueLength;
 var codeToCrack = 123456789012;
 var inputFieldAssist = document.querySelector(".input-field-assist");
-var video = document.querySelector(".media video");
+var video = document.querySelector("#media video");
 
 var videoTl = new TimelineMax({paused:true});
 
@@ -9,7 +9,9 @@ var videoTl = new TimelineMax({paused:true});
 
 videoTl.to("#media", 0, {display: "flex"})
 .to("#media", 1, {opacity: 1}, "+=0.5"
-);
+).addCallback(function(){
+  video.play();
+});
 
 
 function checkInputFieldValue(inputValue) {
