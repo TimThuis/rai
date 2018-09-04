@@ -1,6 +1,7 @@
 var valueLength;
 var codeToCrack = 123456789012;
 var inputFieldAssist = document.querySelector(".input-field-assist");
+var inputField = document.querySelector(".code-input input");
 var video = document.querySelector("#media video");
 
 var videoTl = new TimelineMax({paused:true});
