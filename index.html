@@ -13,31 +13,54 @@
     <title>Rai Innovatie Event</title>
 
     <!-- css -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.min.css">
   </head>
   <body>
     <div class="main">
-      <div class="intro-screen">
-        <h1>Rai Innovatie Event</h1>
-        <div class="line"></div>
-        <div class="content-center">
+
+      <div class="page page-one">
+        <div class="title">
+          <h2>Rai Innovatie Event</h2>
+          <div class="line line-white"></div>
+        </div>
+        <div class="content-page content-page-one">
           <p>Innovatie is van iedereen dus samen kom je tot de oplossing.</p>
           <p>Maak de puzzel compleet en kraak de code nog deze week.</p>
-          <p>Veel succes, Bret & Eline</p>
           <p class="underline input-field-assist ">Vul hier de code in.</p>
           <div class="code-input">
             <input type="number" oninput="checkInputFieldValue(this.value)" name="inputField" value="" placeholder="************">
           </div>
+          <p>Veel succes, Bret & Eline</p>
+        </div>
+        <img class="logo-rai logo-page-one" src="./media/raiLogoWit.svg" alt="rai logo footer page one">
+      </div>
+
+      <div class="page page-two">
+        <div class="title">
+          <h2>Gefeliciteerd, je hebt de code gekraakt!</h2>
+          <div class="line line-red"></div>
+        </div>
+        <div class="content-page">
+          <p>Hieronder vind je de details van het halfjaarlijkse Beleidsteamoverleg op 19 en 20 september.</p>
+          <div class="container-hotel">
+            <p><span class="bold">Lokatie:</span> Hotel Jakarta</p>
+            <img src="./media/hotel-jakarta.jpg" alt="hotel image">
+            <p class="quote">“Two worlds Connected: Waar vroeger de lijndienst vertrok naar Jakarta, ligt nu een groene oase in het centrum van Amsterdam.”</p>
+          </div>
+          <p><span class="bold">Aanvang: </span>16.00u inchecken en inloop, 17u start 24 sessie.</p>
+          <p><span class="bold">Programma: </span><a href="./media/programma.jpg" target="_blank">Klik hier</a></p>
+          <p><span class="bold">Voorbereiding: </span>Bereid een pitch voor van 1 minuut met als onderwerp “waarom de RAI moet innoveren” en breng een item mee dat voor jou symbool staat voor deze noodzaak.</p>
+          <div id="media">
+            <p><span class="bold">Wat kun je verwachten?</span></p>
+            <div class="video-container">
+              <video  controls preload src="./media/videoRai.mp4"></video>
+            </div>
+          </div>
+          <img class="logo-rai logo-page-two" src="./media/raiLogoRood.svg" alt="rai logo footer page two">
         </div>
       </div>
 
-      <img id="logo-rai-bottom" src="./media/raiLogo.svg" alt="rai logo footer">
-      <div id="media">
-        <div class="video-container">
-          <video  controls preload src="./media/videoRaiSample.mp4"></video>
-        </div>
-      </div>
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>

@@ -1,46 +1,87 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
-  max-width: 600px;
-  background: black;
+  max-width: 400px;
+  p {
+    margin: 24px 0;
+  }
+  a {
+    color: #D72346;
+  }
 }
 
 .main {
-  background: #D72346;
-  height: 100vh;
-  max-width: 700px;
-  color: white;
-  padding: 0 32px;
   position: relative;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  margin: auto;
-  h1 {
+  overflow: hidden;
+  .page {
+    padding: 0 32px;
+    position: relative;
+    .logo-page-one {
+      position: absolute;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      right: 0;
+    }
+    .logo-page-two {
+      margin: 36px auto 0 auto;
+      display: block;
+    }
+    .bold {
+      font-weight: 600;
+    }
+  }
+  .page-one {
+    background: #D72346;
+    height: 100vh;
+    color: white;
+    .content-page-one {
+      margin-top: 64px;
+    }
+  }
+  .page-two {
+    position: absolute;
+    background: white;
+    color: #4A4A4A;
+    .container-hotel {
+      p:first-child {
+        margin-bottom: 8px;
+      }
+      img {
+        width: 100%;
+      }
+      .quote {
+        margin-top: 4px;
+        font-size: 12px;
+        font-style: italic;
+      }
+    }
+  }
+  h2 {
     padding: 64px 0 0 0;
     margin: 0;
     text-transform: uppercase;
-    font-size: 1.6em;
+    font-size: 24px;
   }
   p {
-    font-size: 1em;
+    font-size: 16px;
   }
-  .line {
-    margin-top: 4px;
-    background: white;
-    height: 4px;
-    width: 48px;
-  }
-  .underline {
-    text-decoration: underline;
-  }
-  .content-center {
-    margin-top: 48px;
-  }
-  .input-field-assist {
-    margin-top: 48px;
-  }
+}
+
+.line {
+  margin-top: 4px;
+  background: white;
+  height: 4px;
+  width: 48px;
+}
+.line-white {
+  background: white;
+}
+.line-red {
+  background: #D72346;
+}
+.underline {
+  text-decoration: underline;
 }
 
 .code-input {
@@ -56,25 +97,10 @@ body {
   }
 }
 
-#logo-rai-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
 #media {
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.9);
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  display: none;
+  p {
+    margin-bottom: 8px;
+  }
   video {
     width: 100%;
   }

@@ -2,17 +2,11 @@ var valueLength;
 var codeToCrack = 123456789012;
 var inputFieldAssist = document.querySelector(".input-field-assist");
 var inputField = document.querySelector(".code-input input");
-var video = document.querySelector("#media video");
 
-var videoTl = new TimelineMax({paused:true});
+var transistionTl = new TimelineMax({paused:true});
 
-// videoTl.to("#media", {opacity: 0.5}, 1);
-
-videoTl.to("#media", 0, {display: "flex"})
-.to("#media", 1, {opacity: 1}, "+=0.5"
-).addCallback(function(){
-  video.play();
-});
+transistionTl.to(".page-two", 1, {top: 0})
+.to(".main", 0, {overflow: "auto"}, "+=1");
 
 
 function checkInputFieldValue(inputValue) {
@@ -26,8 +20,8 @@ function checkInputFieldValue(inputValue) {
   }
   else if (valueLength == 12) {
     if (inputValue == codeToCrack) {
-      setTextsFieldAssist("De code is gekraakt, gefeliciteerd!");
-      startVideo();
+      setTextsFieldAssist("De code is correct.");
+      toPageTwo();
     }
     else {
       setTextsFieldAssist("De code is incorrect, probeer het nog eens.");
@@ -39,6 +33,6 @@ function setTextsFieldAssist(text) {
   inputFieldAssist.innerHTML = text;
 }
 
-function startVideo() {
-    videoTl.play();
+function toPageTwo() {
+    transistionTl.play();
 }
