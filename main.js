@@ -6,7 +6,7 @@ var inputField = document.querySelector(".code-input input");
 var transistionTl = new TimelineMax({paused:true});
 
 transistionTl.to(".page-two", 1, {top: 0})
-.to(".main", 0, {overflow: "auto"}, "+=1");
+.to(".main", 0, {overflow: "auto"});
 
 
 function checkInputFieldValue(inputValue) {
