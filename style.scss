@@ -37,7 +37,7 @@ body {
     height: 100vh;
     color: white;
     .content-page-one {
-      margin-top: 64px;
+      margin-top: 32px;
     }
   }
   .page-two {
@@ -105,4 +105,10 @@ body {
   video {
     width: 100%;
   }
+}
+
+.puzzelPrev {
+  margin: -8px auto -8px auto;
+  width: 60%;
+  display: block;
 }
