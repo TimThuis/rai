@@ -1,6 +1,6 @@
 var valueLength;
-// var codeToCrack = 821982411637;
-var codeToCrack = 123456789012;
+var codeToCrack = 821982411637;
+// var codeToCrack = 123456789012;
 var inputFieldAssist = document.querySelector(".input-field-assist");
 var inputField = document.querySelector(".code-input input");
 
